@@ -1,14 +1,14 @@
 model_params:
   name: 'VanillaVAE'
-  in_channels: 3
+  in_channels: 1
   latent_dim: 128
 
 
 data_params:
-  data_path: "Data/"
-  train_batch_size: 64
-  val_batch_size:  64
-  patch_size: 64
+  data_path: "/Users/delshadkanjo/Projects/Bachelorprojekt/gesunddaten"
+  train_batch_size: 32
+  val_batch_size:  32
+  patch_size: 32
   num_workers: 4
 
 
@@ -21,9 +21,9 @@ exp_params:
 
 trainer_params:
   gpus: [1]
-  max_epochs: 100
+  max_epochs: 25
 
 logging_params:
-  save_dir: "logs/"
+  save_dir: "/Users/delshadkanjo/Projects/Bachelorprojekt/gesunddaten"
   name: "VanillaVAE"
   
